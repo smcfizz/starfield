@@ -13,12 +13,10 @@
   </style>
 </head>
 <body>
-  <!-- Load dependencies -->
-  <script src="https://rawgit.com/IceCreamYou/MainLoop.js/gh-pages/build/mainloop.min.js"></script>
-  <script src="https://rawgit.com/wilsonpage/fastdom/master/fastdom.min.js"></script>
-  <script src="https://rawgit.com/mrdoob/stats.js/master/build/stats.min.js"></script>
-  <script src="https://rawgit.com/One-com/one-color/master/one-color.js"></script>
-  <!-- Load the Starfield JavaScript -->
-  <script src="./starfield.js"></script>
+  <div style="width: 500px; height: 500px"></div>
+  <script type="module">
+    import Starfield from './dist/starfield.js';
+    const starfield = new Starfield({});
+  </script>
 </body>
 </html>
