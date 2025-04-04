@@ -1,5 +1,5 @@
 {
-  "name": "starfield.js",
+  "name": "@smcfizz/starfield.js",
   "version": "0.1.0",
   "type": "module",
   "description": "Displays a simple starfield using the JavaScript Canvas API",
