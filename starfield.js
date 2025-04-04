@@ -1,10 +1,16 @@
-let color = one.color;
+import Stats from "stats.js/src/Stats.js";
+import one from "onecolor";
+import MainLoop from "mainloop.js";
+import fastdom from "fastdom";
+
+let color = one;
 let stats = new Stats();
 
 class Starfield {
     // TODO support custom parameters
     // TODO support transitioning to hyperspace animation
     // TODO support mouse parallax
+    // TODO accept canvas styling parameters
     constructor(props = {}) {
         this.state = {
             init: true, // Init?
@@ -55,6 +61,10 @@ class Starfield {
         // Create canvas element
         let cvs = document.createElement('canvas');
         cvs.id = this.ids.cid;
+        cvs.style.position = 'absolute';
+        cvs.style.zIndex = '-1';
+        cvs.style.top = '0';
+        cvs.style.left = '0';
         document.body.appendChild(cvs);
 
         // Initialize and begin animation
@@ -597,4 +607,4 @@ class Starfield {
     }
 }
 
-const starfield = new Starfield({});
+export default Starfield;

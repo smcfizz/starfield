@@ -1,0 +1,34 @@
+{
+  "name": "starfield.js",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Displays a simple starfield using the JavaScript Canvas API",
+  "main": "starfield.js",
+  "dependencies": {
+    "fastdom": "^1.0.0",
+    "mainloop.js": "^1.0.0",
+    "onecolor": "^4.0.0",
+    "stats.js": "=0.17.0"
+  },
+  "scripts": {
+    "build": "esbuild --bundle ./starfield.js --outfile=dist/starfield.js --format=esm",
+    "test": "http-server . -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smcfizz/starfield.git"
+  },
+  "keywords": [
+    "starfield"
+  ],
+  "author": "smcfizz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smcfizz/starfield/issues"
+  },
+  "homepage": "https://github.com/smcfizz/starfield#readme",
+  "devDependencies": {
+    "esbuild": "^0.25.2",
+    "http-server": "^14.1.1"
+  }
+}
